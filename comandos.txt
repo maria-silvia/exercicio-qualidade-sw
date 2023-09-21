@@ -36,3 +36,36 @@ git commit -m "modifica exemplo.txt"
 git push --set-upstream origin staging
 git checkout master 
 git merge staging 
+
+// processo em caso de trabalho em equipe
+git pull
+git checkout -b sistema-de-login
+vim sistema_login.txt
+git add .
+git commit -m "add sistema de login"
+git checkout master 
+git pull
+git merge sistema-de-login 
+git push
+
+// pull request
+git checkout sistema-de-login 
+vim sistema_login.txt
+git add .
+git commit -m "add idade ao sistema de login"
+git push --set-upstream origin sistema-de-login
+
+PR: https://github.com/maria-silvia/exercicio-qualidade-sw/pull/1
+
+
+// git ignore
+mkdir segredos
+cd segredos/
+touch senhas
+cd ..
+git status
+vim .gitignore
+git status
+git add .
+git commit -m "add gitignore"
+git push
