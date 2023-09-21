@@ -16,5 +16,23 @@ git status
 git add comandos.txt
 git commit -m "adiciona arquivo de comandos"
 
+vim comandos.txt
+git status
+git add comandos.txt
+git commit -m "add comandos no arquivo de comandos"
 
+git reflog
+git reset --hard c012bd4
+git reflog
+git reset --hard e57e57b
 
+git branch staging
+git branch
+git checkout staging 
+vim exemplo.txt 
+git status
+git add .
+git commit -m "modifica exemplo.txt"
+git push --set-upstream origin staging
+git checkout master 
+git merge staging 
