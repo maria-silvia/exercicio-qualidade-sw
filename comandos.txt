@@ -3,11 +3,18 @@ cd exercicio-qualidade-sw/
 git init
 vim exemplo.txt
 git status
-git add .
+git add exemplo.txt
 git status
 git commit -m "commit inicial"
 git push
 git remote add git@github.com:maria-silvia/exercicio-qualidade-sw.git
 git push
 git push --set-upstream origin master
+
+vim comandos.txt
+git status
+git add comandos.txt
+git commit -m "adiciona arquivo de comandos"
+
+
 
