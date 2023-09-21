@@ -1,0 +1,13 @@
+mkdir exercicio-qualidade-sw
+cd exercicio-qualidade-sw/
+git init
+vim exemplo.txt
+git status
+git add .
+git status
+git commit -m "commit inicial"
+git push
+git remote add git@github.com:maria-silvia/exercicio-qualidade-sw.git
+git push
+git push --set-upstream origin master
+
